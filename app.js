@@ -30,7 +30,6 @@ let weather = {
         document.querySelector('.wind').innerText = "wind speed: " + speed + "km/hr";
 
         document.querySelector('.weather').classList.remove('loading')
-        // document.body.style.backgroundImage = "url(https://commons.wikimedia.org/wiki/File:Arakin_Ijeda_Ilesha_Osun_state.jpg)"
 
     },
 
@@ -43,13 +42,13 @@ document.querySelector(".search button").addEventListener('click', () => {
     weather.search()
 })
 
-document.querySelector(".search-input").addEventListener("keyup", function (event) {
+// document.querySelector(".search-input").addEventListener("keyup", function (event) {
     
-    if (event.key == "enter") {
-        event.preventDefault();
-        weather.search()
-    }
-})
+//     if (event.key == "enter") {
+//         event.preventDefault();
+//         weather.search()
+//     }
+// })
 
 
 weather.fetchWeather('abeokuta')
