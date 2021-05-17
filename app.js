@@ -42,13 +42,13 @@ document.querySelector(".search button").addEventListener('click', () => {
     weather.search()
 })
 
-// document.querySelector(".search-input").addEventListener("keyup", function (event) {
+document.querySelector(".search-input").addEventListener("keyup", function (event) {
     
-//     if (event.key == "enter") {
-//         event.preventDefault();
-//         weather.search()
-//     }
-// })
+    if (event.key == "enter") {
+        event.preventDefault();
+        weather.search()
+    }
+})
 
 
-weather.fetchWeather('abeokuta')
+weather.fetchWeather('Ilesha')
